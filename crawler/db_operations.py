@@ -142,7 +142,6 @@ def fetch_all_lyrics_from_artists(artists):
     artists_str = ','.join(["\'" + artist + "\'" for artist in artists])
     
     sql = """SELECT lyrics FROM songs WHERE singers IN (%s);""" % artists_str
-    #sql = """SELECT lyrics FROM songs WHERE is_tagalog AND singers IN (%s);""" % artists_str
     conn, cur = get_connection()
     
     cur.execute(sql)
