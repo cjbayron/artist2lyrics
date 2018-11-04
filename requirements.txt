@@ -1,0 +1,7 @@
+gensim==3.5.0
+Keras==2.2.2
+tensorflow_gpu==1.8.0
+numpy==1.14.3
+matplotlib==2.2.3
+psycopg2==2.7.5
+scikit_learn==0.20.0
